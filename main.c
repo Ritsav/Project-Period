@@ -19,7 +19,13 @@ int main(){
     // FILE OPEN
     FILE *fptr = fopen("Users.txt", "a+");
 
-    // FILE length for LOOP
+    // FILE status check
+    if (fptr == NULL) {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    // FILE '\n' length for LOOP
     do{
         ch = fgetc(fptr);
         if(ch == '\n'){
@@ -62,6 +68,7 @@ int main(){
         int found = 0;
         for (int i = 0; i < len; i++) {
             fscanf(fptr, "Username: %s Email: %s Password: %s\n", checkUser.username, checkUser.email, checkUser.password);
+
             if (strcmp(user.username, checkUser.username) == 0 && strcmp(user.password, checkUser.password) == 0) {
                 found = 1;
                 break;
