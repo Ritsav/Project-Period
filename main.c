@@ -60,7 +60,7 @@ int main(){
         scanf("%s", user.password);
 
         int found = 0;
-        for (int i = 1; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             fscanf(fptr, "Username: %s Email: %s Password: %s\n", checkUser.username, checkUser.email, checkUser.password);
             if (strcmp(user.username, checkUser.username) == 0 && strcmp(user.password, checkUser.password) == 0) {
                 found = 1;
