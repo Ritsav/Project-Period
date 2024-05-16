@@ -40,9 +40,9 @@ int main()
         scanf(" %d",&r);
         break;
 
-    case 2:
+        case 2:
         break;
-
+        
     default:
         printf("Invalid case");
         break;
@@ -61,10 +61,7 @@ int main()
         printf("Select your answer:");
         scanf("%d",&b);
 
-        if(b==1)
-        {
-            printf("Write about a time you felt happy.");
-        }
+       
     }
     return 0;
 }
