@@ -2,66 +2,77 @@
 
 int main()
 {
-    int s,c,p,r,a,b;
-    char h,q;
+    int a[50];
+    char b[100];
 
 
     printf("On the scale from 1-5, how bad were your mood swings throughout the day?\n");
     printf("1\n2\n3\n4\n5\n");
     printf("Select your answer:");
-    scanf("%d",&s);
+    scanf("%d",&a[0]);
 
     printf("\nDescribe the mood you experienced the most by selecting the given options,\n");
     printf("1.Happy\n2.Sad\n3.Energetic\n4.Tired\n");
     printf("Select your answer:");
-    scanf("%d",&c);
+    scanf("%d",&a[1]);
 
     printf("\nHow many hours did you sleep last night?\n");
-    printf("a.Less than 4 hours\nb.4-5 hrs\nc.6-7 hrs\nd.8-9 hrs\ne.More than 10 hours\n");
+    printf("1.Less than 4 hours\n2.4-5 hrs\n3.6-7 hrs\n4.8-9 hrs\n5.More than 10 hours\n");
     printf("Select your answer:");
-    scanf(" %c",&h);
+    scanf("%d",&a[2]);
 
     printf("\nHow would you rate the quality of your sleep?\n");
-    printf("a.Poor\nb.Fair\nc.Good\nd.Excellent\n");
+    printf("1.Poor\n2.Fair\n3.Good\n4.Excellent\n");
     printf("Select you answer:");
-    scanf(" %c",&q);
+    scanf(" %c",&a[3]);
 
     printf("\nDid you experience any physical symptoms today that may have affected your emotions?\n");
     printf("1.Yes\n2.No\n");
     printf("Select your answer:");
-    scanf(" %d",&p);
+    scanf(" %d",&a[4]);
 
-    switch(p)
+    switch(a[4])
     {
     case 1:
-        printf("If yes, select the symptoms you experienced:\n");
-        printf("a.Cramps\nb.Headache\nc.Fatigue\nd.Nausea\ne.Backache\n");
+        printf("\nIf yes, select the symptoms you experienced:\n");
+        printf("1.Cramps\n2.Headache\n3.Fatigue\n4.Nausea\n5.Backache\n");
         printf("Select your answer:");
-        scanf(" %d",&r);
+        scanf("%d",&a[5]);
         break;
 
-        case 2:
+    case 2:
         break;
-        
+
     default:
         printf("Invalid case");
         break;
     }
 
-    printf("Do you want to journal right now?\n");
+    printf("\nDo you want to journal right now?\n");
     printf("1.Yes\n2.No\n");
     printf("Select your answer:");
-    scanf("%d",&a);
+    scanf("%d",&a[6]);
 
-    switch(a)
+    switch(a[6])
     {
     case 1:
-        printf("Do you want guided or unguided journaling?");
+        printf("\nDo you want guided or unguided journaling?\n");
         printf("1.Guided\n2.Unguided\n");
         printf("Select your answer:");
-        scanf("%d",&b);
+        scanf("%d",&a[7]);
 
-       
+        if(a[7]==1)
+        {
+        }
+        break;
+
+    case 2:
+        break;
+
+    default:
+        printf("Invalid case");
+        break;
     }
+
     return 0;
 }
