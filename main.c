@@ -137,7 +137,7 @@ int main(){
             Tracking(file2);
 
             // New cycle update + Emotion Log Routing
-            Navigation(file2);
+            Navigation(file2, checkUser.id);
 
             fclose(file2);
         } else {

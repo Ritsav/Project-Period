@@ -6,7 +6,7 @@
 #define C_PROGRAMMING_NAVIGATION_H
 
 
-void Navigation(FILE *file){
+void Navigation(FILE *file, int id){
     int day, month, year;
 
     newPeriod:
@@ -33,7 +33,7 @@ void Navigation(FILE *file){
         scanf("%d", &choice);
 
         if(choice == 1){
-            EmotionLog();
+            EmotionLog(id);
         }else if(choice == 2){
             printf("\nHave a great day!");
         }else{
@@ -52,7 +52,7 @@ void Navigation(FILE *file){
         scanf("%d", &choice);
 
         if(choice == 1){
-            EmotionLog();
+            EmotionLog(id);
         }else if(choice == 2){
             printf("\nHave a great day!");
         }else{
