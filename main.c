@@ -76,7 +76,7 @@ int main(){
         scanf("%s", user.username);
 
         printf("Password: ");
-        scanf("%s", user.password);
+        getPassword(user.password, 100);
 
         int found = 0;
         for (int i = 0; i < len; i++) {
