@@ -1,3 +1,0 @@
-Id: 1 Username: Ritsav Email: shrestharitsav@gmail.com Password: Helloworld
-Id: 2 Username: Ankita Email: ankitasthaa@gmail.com Password: HEHEHE
-Id: 3 Username: User1 Email: user1@gmail.com Password: 123
